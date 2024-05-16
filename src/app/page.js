@@ -128,7 +128,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center h-svh w-full gap-3">
             {/* <MacbookScroll /> */}
             <div className="font-sans">All-in-one financial advisory app</div>
-            <div className=" font-serif text-5xl text-center leading-tight">
+            <div className=" font-serif text-5xl text-center leading-tight text-white">
               Get
               {/* <br /> */}
               {/* <Highlight> */}
