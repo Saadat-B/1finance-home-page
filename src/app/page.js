@@ -122,7 +122,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-black">
       <div className="flex flex-col justify-center items-center h-screen">
         <HeroHighlight>
           <div className="flex flex-col justify-center items-center h-svh w-full gap-3">
