@@ -6,11 +6,7 @@ import { cn } from "../../../../utils/cn";
 import { HoverBorderGradient } from "./HoverBorder";
 import { HeroHighlight, Highlight } from "./HeroHighlight";
 
-export function PlaceholdersAndVanishInput({
-  placeholders,
-  onChange,
-  onSubmit,
-}) {
+export function HeroText({ placeholders, onChange, onSubmit }) {
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
 
   useEffect(() => {
@@ -224,9 +220,9 @@ export function PlaceholdersAndVanishInput({
                 duration: 0.3,
                 ease: "linear",
               }}
-              className=" text-sm sm:text-base font-normal text-white pl-4 sm:pl-12 w-[calc(100%-2rem)] text-center font-sans h-full"
+              className="font-serif text-5xl text-center text-white pl-4 sm:pl-12 w-[calc(100%-2rem)] h-full"
             >
-              {placeholders[currentPlaceholder]}
+              <Highlight>{placeholders[currentPlaceholder]}</Highlight>
             </motion.p>
           )}
         </AnimatePresence>
